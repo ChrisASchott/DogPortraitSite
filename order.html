@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="./gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="./faq.html">FAQ</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Let's get started</h1>
+    </header>
+    <div class="main">
+      <h2>Send us a photo of your dog.</h2>
+      <p>We start with a clear, in-focus photo of your dog's face.
+        The better the photo, the better a likeness we can obtain.</p>
+    </main>
+    <div class="form">
+
+      <form>
+      
+      <p>
+      
+      <form action="+">
+      
+      <p><input type="text" name="name" /> full name</p>
+      
+      
+      <p><input type="text" name="address" /> email address</p>
+
+      <TEXTAREA name="comments" ROWS="2" COLS="20"> comments</TEXTAREA>
+
+      <div class="container">
+        <div class="contr"><h3>Select the file (image) and click Upload button</h3></div>
+
+        <div class="upload_form_cont">
+            <form id="upload_form" enctype="multipart/form-data" method="post" action="upload.php">
+                <div>
+                    <div><input type="file" name="image_file" id="image_file" onchange="fileSelected();" /></div>
+                </div>
+                <div>
+                    <input type="button" value="Upload" onclick="startUploading()" />
+                </div>
+                <div id="fileinfo">
+                    <div id="filename"></div>
+                    <div id="filesize"></div>
+                    <div id="filetype"></div>
+                    <div id="filedim"></div>
+                </div>
+                <div id="error">You should select valid image files only!</div>
+                <div id="error2">An error occurred while uploading the file</div>
+                <div id="abort">The upload has been canceled by the user or the browser dropped the connection</div>
+                <div id="warnsize">Your file is very big. We can't accept it. Please select more small file</div>
+
+                <div id="progress_info">
+                    <div id="progress"></div>
+                    <div id="progress_percent">&nbsp;</div>
+                    <div class="clear_both"></div>
+                    <div>
+                        <div id="speed">&nbsp;</div>
+                        <div id="remaining">&nbsp;</div>
+                        <div id="b_transfered">&nbsp;</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div id="upload_response"></div>
+                </div>
+            </form>
+
+            <img id="preview" />
+        </div>
+    </div>      
+      </form>
+      
+      </div>
+    <aside></aside>
+    <footer></footer>
+  </div>
+</body>
+</html>
